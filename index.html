@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Santana.ht</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #0d0d0d;
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 60px;
+      background: radial-gradient(circle at center, #1a1a1a, #000);
+    }
+
+    .glitch {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 48px;
+      position: relative;
+      color: gold;
+      animation: glitch 1s infinite;
+    }
+
+    @keyframes glitch {
+      0% { text-shadow: 2px 2px red; }
+      20% { text-shadow: -2px -2px blue; }
+      40% { text-shadow: 2px -2px green; }
+      60% { text-shadow: -2px 2px magenta; }
+      80% { text-shadow: 2px 2px cyan; }
+      100% { text-shadow: none; }
+    }
+
+    .subtitle {
+      color: #ccc;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 30px;
+    }
+
+    h2 {
+      color: gold;
+      font-size: 28px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: gold;
+      margin-top: 10px;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .video-grid iframe, .video-grid .video-link-block {
+      width: 100%;
+      height: auto;
+      background: #1a1a1a;
+      border: 2px solid #333;
+      border-radius: 10px;
+      padding: 15px;
+      color: gold;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+
+    .video-grid iframe:hover, .video-grid .video-link-block:hover {
+      transform: scale(1.03);
+    }
+
+    .contact {
+      background-color: #111;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .contact a {
+      color: gold;
+      text-decoration: none;
+      display: block;
+      margin: 10px 0;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      padding: 30px 10px;
+    }
+
+    @media (min-width: 768px) {
+      .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 class="glitch">Santana.ht</h1>
+  <p class="subtitle">After Effects | Premiere Pro | CapCut | Photoshop<br>Disponible 24h/24 – 7j/7</p>
+</header>
+
+<section>
+  <h2>À propos</h2>
+  <p>
+    Je suis un monteur vidéo indépendant, spécialisé dans les montages créatifs, dynamiques ou émotionnels. 
+    J’utilise les meilleurs outils pour créer des visuels percutants adaptés à vos réseaux : YouTube, TikTok, Instagram, Reels…
+  </p>
+</section>
+
+<section>
+  <h2>Mes Projets</h2>
+  <div class="video-grid">
+    <a class="video-link-block" href="https://streamable.com/cx72x6" target="_blank">Goût d’antan — Voir la vidéo</a>
+    <a class="video-link-block" href="https://streamable.com/e37dya" target="_blank">Déclic Eveny — Voir la vidéo</a>
+    <a class="video-link-block" href="https://streamable.com/j0a6d4" target="_blank">Wendy Video Edit — Voir la vidéo</a>
+    <a class="video-link-block" href="https://streamable.com/6t8hw2" target="_blank">Black History Month — Voir la vidéo</a>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Me Contacter</h2>
+  <a href="mailto:henleysaintgermain2406@gmail.com">henleysaintgermain2406@gmail.com</a>
+  <a href="https://www.instagram.com/_h3nley" target="_blank">@_h3nley (Instagram)</a>
+  <a href="https://www.tiktok.com/@santana.ht" target="_blank">@santana.ht (TikTok)</a>
+</section>
+
+<footer>
+  &copy; 2025 — Réalisé par Santana.ht
+</footer>
+
+</body>
+</html>
